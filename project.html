@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="project.css">
+</head>
+<body>
+<div id="container">
+     <nav>
+        <div id="logo">
+          Company
+        </div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+      
+          <li><a href="#">Contact</a></li>
+              <li class="dropdown" onmouseover="hover(this);" onmouseout="out(this);"><a href="#">Gallery &nbsp;<i class="fa fa-caret-down"></i></a>
+            <div class="dd">
+              <div id="up_arrow"></div>
+            <ul>
+              
+              <li><a href="#">2019</a></li>
+              <li><a href="#">2018</a></li>
+              <li><a href="#">2017</a></li>
+            </ul>
+            </div>
+          </li>
+          <li class="dropdown"><a href="#">Others &nbsp;<i class="fa fa-caret-down"></i> </a>
+           <div class="dd">
+             <div id="u_a_c"><div id="up_arrow"></div></div>
+            <ul>
+              
+              <li><a href="#">DOCS</a></li>
+              <li><a href="#">API</a></li>
+              <li><a href="#">PROJECTS</a></li>
+            </ul>
+            </div>
+        </ul>
+      </nav>
+</div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="https://cdn.pixabay.com/photo/2015/04/19/08/32/marguerite-729510__340.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="https://cdn.pixabay.com/photo/2013/07/21/13/00/rose-165819__340.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="https://cdn.pixabay.com/photo/2016/02/17/19/08/lotus-1205631__340.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</body>
+<script src="script.js"></script>
+</html> 
